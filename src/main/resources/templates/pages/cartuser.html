@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Spring eCommerce</title>
+    <div th:replace="~{components/Animations/bootstrapid.html :: bootstraplink}"></div>
+</head>
+<body>
+<!-- Navigation -->
+<div th:replace="~{components/NavBar/navbaruser.html :: navbaruser}"></div>
+<!-- Page Content -->
+<div class="container">
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3"> Spring eCommerce <small>Carrito</small></h1>
+    <div th:replace="~{components/Breadcrumbs/cart.html :: breadcrumb}"></div>
+    <!-- Blog Post -->
+    <div th:replace="~{components/Cart/cart.html :: cartcontainer}"></div>
+</div>
+<!-- Footer -->
+<div th:replace="~{components/Footer/footer.html :: footer}"></div>
+<!-- Bootstrap core JavaScript -->
+<div th:replace="~{components/Animations/bootstrapid.html :: bootstrapcontext}"></div>
+</body>
+</html>
