@@ -1,0 +1,18 @@
+<div th:fragment="cartcontainer">
+    <div class="card mb-4">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div th:replace="~{components/Tables/cart.html :: table}"></div>
+                </div>
+                <div class="col-lg-3">
+                    <h2 class="card-title">SUBTOTAL</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item"><h5 th:text="${orden.total}"></h5></li>
+                        <a th:href="@{/orden}" class="btn btn-dark">Ver Orden</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

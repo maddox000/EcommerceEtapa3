@@ -1,0 +1,22 @@
+<form th:fragment="registerform" method="post">
+    <div class="form-group">
+        <label>Nombres:</label> <label for="nombre"></label><input type="text" class="form-control" id="nombre" name="nombre" required
+                                                                   placeholder="Ingrese sus nombres" autocomplete="off">
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label> <input type="email" class="form-control" id="email" name="email" required
+                                                 placeholder="Ingrese su email" autocomplete="off">
+    </div>
+    <div class="form-group">
+        <label for="direccion">Dirección:</label> <input type="text" class="form-control" id="direccion"
+                                                         name="direccion" required placeholder="Ingrese su dirección"
+                                                         autocomplete="off">
+    </div>
+    <div class="form-group">
+        <label>Contraseña</label> <label for="password"></label><input type="password" class="form-control" id="password" name="password" required
+                                                                       placeholder="Ingrese su contraseña" autocomplete="off">
+    </div>
+    <div class="col-sm-2">
+        <button type="submit" class="btn btn-success">Guardar</button>
+    </div>
+</form>

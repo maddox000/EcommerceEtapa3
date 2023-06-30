@@ -1,0 +1,15 @@
+<form th:fragment="itemdetailform" th:action="@{/carrito}" method="POST">
+    <input type="hidden" th:value="${producto.id}"  name="id">
+    <h2 class="card-title" th:text="${producto.nombre}"></h2>
+
+    <ul class="list-group">
+        <img class="card-img-top"
+             th:src="@{/img/{img} (img=${producto.imagen})}" alt="" src="">
+        <li class="list-group-item"><h5 th:text=" 'Precio: '+ ${producto.precio}"></h5></li>
+        <li class="list-group-item"><p th:text=" 'Descripción: '+ ${producto.descripcion}"></p></li>
+        <li class="list-group-item">
+            <h6>Cantidad: <label for="cantidad"></label><input type="number" id="cantidad" name="cantidad" autocomplete="off" min="1" max="5" value="1"></h6>
+        </li>
+    </ul>
+    <button type="submit" class="btn btn-dark">Añadir al carrito</button>
+</form>

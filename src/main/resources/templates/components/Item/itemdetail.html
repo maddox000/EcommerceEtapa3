@@ -1,0 +1,22 @@
+<div th:fragment="itemdetailcontainer">
+    <div class="container">
+        <!-- Page Heading/Breadcrumbs -->
+        <h1 class="mt-4 mb-3"> Spring eCommerce <small>Producto</small></h1>
+        <div th:replace="~{components/Breadcrumbs/itemdetail.html :: breadcrumb}"></div>
+        <!-- Blog Post -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a href="#">
+                            <img class="img-fluid rounded" src="" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div th:replace="~{components/Forms/itemdetail.html :: itemdetailform}"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

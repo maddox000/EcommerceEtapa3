@@ -1,0 +1,9 @@
+<div th:fragment="itemcreatecontainer">
+    <div class="container">
+        <!-- Page Heading/Breadcrumbs -->
+        <h1 class="mt-4 mb-3"> Spring eCommerce <small>Productos</small></h1>
+        <div th:replace="~{components/Breadcrumbs/itemcreate.html :: breadcrumb}"></div>
+        <h2>Crear Producto</h2>
+        <div th:replace="~{components/Forms/itemcreate.html :: itemcreateform}"></div>
+    </div>
+</div>
